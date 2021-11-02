@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2904164 */
+  src: url('//at.alicdn.com/t/font_2904164_cr5eg2ey0rn.woff2?t=1635607404191') format('woff2'),
+       url('//at.alicdn.com/t/font_2904164_cr5eg2ey0rn.woff?t=1635607404191') format('woff'),
+       url('//at.alicdn.com/t/font_2904164_cr5eg2ey0rn.ttf?t=1635607404191') format('truetype');
+}
+
+.iconfont {
+  /*旋转*/
+  display: inline-block;
+  font-family: "iconfont" !important;
+  font-size: 19px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;  
+}
+
+/*
+  .fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}*/
+
+.icon-xinlangweibo:before {
+  content: "\e600";
+}
+
+.icon-weixin:before {
+  content: "\e601";
+}
+
+.icon-mac:before {
+  content: "\e667";
+}
+
+.icon-weixin1:before {
+  content: "\e62c";
+}
+
+.icon-weibo:before {
+  content: "\e73c";
+}
+
+/*字体*/
+.icon-bilibili:before {
+  content: "\e6b4";
+}
+
+.icon-QQ:before {
+  content: "\e882";
+}
+
+.icon-QQ-circle-fill:before {
+  content: "\e887";
+}
+
+.icon-gitee:before {
+  content: "\e6d6";
+}
+
+.icon-weibo1:before {
+  content: "\e666";
+}
+
+.icon-QQ1:before {
+  content: "\e668";
+}
+
+.icon-gitee1:before {
+  content: "\e602";
+}
+
+.icon-kuaishou:before {
+  content: "\e66e";
+}
+/*小电视*/
+.icon-bilibili1:before {
+  content: "\e603";
+}
+
+.icon-github:before {
+  content: "\ea0b";
+}
+
+.icon-QX-kuaishou:before {
+  content: "\e797";
+}
+
+.icon-bilibili-fill:before {
+  content: "\e93e";
+}
+
+.icon-bilibili2:before {
+  content: "\e604";
+}
+
+.icon-douyin:before {
+  content: "\e65e";
+}
+
+.icon-douyin1:before {
+  content: "\e8db";
+}
+
+.icon-kuaishou1:before {
+  content: "\e8dc";
+}
+
+.icon-enshanluntan:before {
+  content: "\e605";
+}
+
+.icon-icon_bilibili-square:before {
+  content: "\e606";
+}
+
+.icon-bilibili3:before {
+  content: "\e637";
+  /* 修改颜色 */
+  /*color: blue;*/
+  /* 修改大小 */
+  font-size: 19px;  
+}
+
+.icon-pinpaibiaoshi_douyin:before {
+  content: "\e659";
+}
+
+.icon-douyin2:before {
+  content: "\e64d";
+}
+
