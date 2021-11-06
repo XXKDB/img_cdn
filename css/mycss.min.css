@@ -1,0 +1,380 @@
+/* 文章页背景 
+.layout_post>#post {
+    /* 以下代表透明度为0.5 可以自行修改
+    background: rgba(255, 255, 255, 0);
+}*/
+
+/* 所有页面背景 */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* 以下代表透明度为0.5 */
+    /*background: rgba(0, 0, 0, 0.3);*/
+    background: linear-gradient(
+      to right bottom,
+      rgba(22, 22, 22, 0.1),
+      rgba(22, 22, 22, 0.01)
+    );
+    /*玻璃模糊*/
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+   /*阴影*/
+    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);       
+    /*玻璃边框*/
+   /*border: 1.5px solid rgb(255 255 255 / 50%);*/
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-left: 1px solid rgba(255, 255, 255, .2);
+}
+
+/*侧边栏背景色*/
+#aside-content .card-widget {
+  background: linear-gradient(
+    to right bottom,
+    rgba(22, 22, 22, 0.5),
+    rgba(22, 22, 22, 0.01)
+  );
+  /*玻璃模糊*/
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  /*阴影*/
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);    
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+  /*玻璃边框*/
+  /*border: 1.5px solid rgb(255 255 255 / 50%);*/
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-left: 1px solid rgba(255, 255, 255, .2);
+  cursor: url("https://cdn.jsdelivr.net/gh/XXKDB/img_cdn/cursor/default.cur"), default !important
+}
+
+/*头像设置*/
+.avatar-img {
+  /*阴影*/
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);    
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    /*玻璃边框*/
+  border-top: 2px solid rgba(255, 255, 255, .5);
+  border-left: 1px solid rgba(255, 255, 255, .5);
+}
+
+#web_bg {
+    /* 背景图像的地址（url括号里）  */
+    background: url(https://cdn.jsdelivr.net/gh/XXKDB/img_cdn/img/bg.jpg);
+    /* 背景图像不重复 */
+    background-repeat: round;
+    /* 背景图像大小 */
+    background-size: cover;
+  }
+
+/*底部*/
+#footer {
+    /*位置*/
+    position: relative;
+    /*颜色*/
+    background: rgba(255, 255, 255, 0);
+    background-attachment: local;
+    background-position: bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}  
+#footer-wrap {
+    position: relative;
+    padding: 2rem 1rem;
+    color: #ff763b;
+    text-align: center;
+}
+
+
+/* 文章页背景 */
+.layout > div:first-child:not(.recent-posts) {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+    padding: 50px 40px;
+    border-radius: 8px;
+    /*background: rgba(12, 12, 12, 0.5);*/
+    background: linear-gradient(
+      to right bottom,
+      rgba(12, 12, 12, 0.6),
+      rgba(12, 12, 12, 0.01)
+    );
+    /*玻璃模糊*/
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+   /*阴影*/
+    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);       
+    /*玻璃边框*/
+   /*border: 1.5px solid rgb(255 255 255 / 50%);*/
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-left: 1px solid rgba(255, 255, 255, .2);
+    -webkit-box-shadow: var(--card-box-shadow);
+    box-shadow: var(--card-box-shadow);
+  }
+
+/*横幅图像*/
+#page-header {
+    background-color: rgba(12, 12, 12, 0.5);
+    /*玻璃模糊*/
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+   /*阴影*/
+    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);       
+  }
+
+/*文章字体颜色*/
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin: 1rem 0 0.7rem;
+    color: var(--bloy2-color);
+    font-weight: bold;
+    cursor: url("https://cdn.jsdelivr.net/gh/XXKDB/img_cdn/cursor/text.cur"), text !important
+}
+body {
+    position: relative;
+    min-height: 100%;
+    background: var(--global-bg);
+    color: var(--bloy2-color);
+    font-size: var(--global-font-size);
+    font-family: Roboto;
+    line-height: 2;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+  #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
+    color: var(--bloy2-color);
+    font-size: 90%;
+  }
+
+/*分级菜单背景色*/
+#nav .menus_items .menus_item .menus_item_child {
+  background-color: rgba(12, 12, 12, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);    
+  -webkit-box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
+}
+
+/*分页数字背景色*/
+#pagination .page-number.current {
+  background: #00000044;
+  /*玻璃模糊*/
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  /*阴影*/
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, .3);       
+  /*玻璃边框*/
+  /*border: 1.5px solid rgb(255 255 255 / 50%);*/
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-left: 1px solid rgba(255, 255, 255, .2);
+  color: var(--white);
+  cursor: url("https://cdn.jsdelivr.net/gh/XXKDB/img_cdn/cursor/pointer2.cur"), pointer !important;
+}
+
+/*404页面背景色*/
+.error404 #error-wrap .error-content {
+  /*background: var(--card-bg);*/
+  background: linear-gradient(
+    to right bottom,
+    rgba(22, 22, 22, 0.5),
+    rgba(22, 22, 22, 0.01)
+  );
+  /*玻璃模糊*/
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  /*阴影*/
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);    
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+  /*玻璃边框*/
+  /*border: 1.5px solid rgb(255 255 255 / 50%);*/
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  border-left: 1px solid rgba(255, 255, 255, .2);  
+ /* -webkit-box-shadow: var(--card-box-shadow);*/
+ /* box-shadow: var(--card-box-shadow);*/
+}
+
+.error404 #error-wrap .error-content .error-info a {
+  background: #18181829;
+  /*玻璃模糊*/
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);    
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-top: 0.5px solid rgba(255, 255, 255, .1);
+  border-left: 0.5px solid rgba(255, 255, 255, .1);
+  border-radius: 8px;
+  color: var(--btn-color);
+}
+/*My Github 选中背景色*/
+.button--animated:before {
+  background: #18181865;
+  /*玻璃模糊*/
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  
+}
+
+
+/*设置按键背景色*/
+#rightside > div > button,
+#rightside > div > a {
+  background-color: #1e1c1ca6;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);    
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-top: 0.5px solid rgba(255, 255, 255, .1);
+  border-left: 0.5px solid rgba(255, 255, 255, .1);
+  color: var(--btn-color);
+}
+
+
+/*滑动条颜色*/
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+*::-webkit-scrollbar-thumb {
+  /*background: rgba(233, 0, 0, 0.945);*/
+  background: #ffffff28;
+  /*玻璃模糊*/
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);    
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-radius: 8px;
+}
+/*滑动条背景色颜色*/
+*::-webkit-scrollbar-track {
+  background-color: #0000002d;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-left: 0.5px solid rgba(255, 255, 255, .1);
+}
+
+
+/*My Github 背景色*/
+#aside-content .card-info #card-info-btn {
+  display: block;
+  margin-top: 0.7rem;
+  /*background-color: rgba(233, 0, 0, 0.945);*/
+  background-color: #1e1c1ca6;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);    
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-top: 0.5px solid rgba(255, 255, 255, .1);
+  border-left: 0.5px solid rgba(255, 255, 255, .1);
+  border-radius: 8px;
+  color: var(--btn-color);
+  text-align: center;
+  line-height: 2.4;
+  cursor: url("https://cdn.jsdelivr.net/gh/XXKDB/img_cdn/cursor/pointer2.cur"), pointer !important
+}
+
+/*选中颜色*/
+#nav .site-page:not(.child):after {
+  background-color: #ffffffdc;
+}
+
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,
+#aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
+  padding: 0.15rem 0.85rem;
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-radius: 6px;
+}
+
+/*友情链接背景色*/
+#article-container .flink .flink-list > .flink-list-item {
+  background: linear-gradient(
+    to right bottom,
+    rgba(22, 22, 22, 0.5),
+    rgba(0, 0, 0, 0.01)
+  );
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);    
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-top: 0.5px solid rgba(255, 255, 255, .1);
+  border-left: 0.5px solid rgba(255, 255, 255, .1);
+}
+
+
+/*图库相关设置*/
+figure.gallery-group .gallery-group-name:after {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  -moz-transition: -moz-transform 0.35s;
+  -o-transition: -o-transform 0.35s;
+  -ms-transition: -ms-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/*图库背景*/
+figure.gallery-group {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0.3rem 0.2rem;
+  width: calc(50% - 0.4rem);
+  height: 250px;
+  border-radius: 8px;
+ /* background: #000;*/
+  background: linear-gradient(
+    to right bottom,
+    rgba(22, 22, 22, 0.5),
+    rgba(0, 0, 0, 0.01)
+  );
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);    
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-top: 0.5px solid rgba(255, 255, 255, .1);
+  border-left: 0.5px solid rgba(255, 255, 255, .1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/*搜索背景色*/
+.search-dialog {
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  z-index: 1001;
+  display: none;
+  margin-left: -15rem;
+  padding: 1rem;
+  width: 30rem;
+  border-radius: 8px;
+  /*background: var(--search-bg);*/
+  background: linear-gradient(
+    to right bottom,
+    rgba(22, 22, 22, 0.5),
+    rgba(0, 0, 0, 0.01)
+  );
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);    
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, .5);
+  border-top: 0.5px solid rgba(255, 255, 255, .1);
+  border-left: 0.5px solid rgba(255, 255, 255, .1);
+  -webkit-animation: titlescale 0.5s;
+  -moz-animation: titlescale 0.5s;
+  -o-animation: titlescale 0.5s;
+  -ms-animation: titlescale 0.5s;
+  animation: titlescale 0.5s;
+}
