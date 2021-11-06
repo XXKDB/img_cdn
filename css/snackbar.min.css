@@ -39,7 +39,7 @@
     margin:0 0 0 24px;
     padding:0;
     min-width:min-content;
-    cursor:pointer
+    cursor: url("https://cdn.jsdelivr.net/gh/XXKDB/img_cdn/cursor/pointer2.cur"), pointer !important
     }
 
 @media (min-width:640px){
