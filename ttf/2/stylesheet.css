@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FZYouMaoZaiS-R-GB';
+    src: url('FZYOUMZJW--GB1-0.woff2') format('woff2'),
+        url('FZYOUMZJW--GB1-0.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
