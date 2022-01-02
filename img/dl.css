@@ -38,10 +38,10 @@
   }
   /* 修改灯笼的字体 */
   .d-box .d1::after {
-    content: '牛年吉祥';
+    content: '虎年吉祥';
   }
   .d-box1 .d1::after {
-    content: '万事顺利';
+    content: '虎虎生威';
   }
   .d-box1 .d1,
   .d-box1 .d2,
