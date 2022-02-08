@@ -33,8 +33,7 @@
       currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/小破站-打烊了-6adea8?style=social&logo=coffeescript' title='这个点了应该去睡觉啦，熬夜对身体不好哦'><div id='runtime'>" + time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';
     }
     document.getElementById("workboard").innerHTML = currentTimeHtml;
-    var me2022 = document.getElementsByClassName("v")[0].dataset;
-    if (me2022.class==="v") {
+    if (document.getElementById("waline-image-upload")) {
       document.querySelector('.v[data-class=v] .vactions label.vaction').parentNode.removeChild(document.querySelector('.vactions label.vaction'));
       document.querySelector('.v[data-class=v] .vactions .upload').parentNode.removeChild(document.querySelector('.vactions .upload'));
     }
